@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhoneBook.PhoneBook"
+             Title="My PhoneBook">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="add_contact.png" Clicked="AddContact_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <VerticalStackLayout Padding="10">
+        <ListView x:Name="mYlISTvIEW" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Spacing="10" Padding="5">
+                            <Label Text="{Binding UNAME}" />
+                            <Label Text="{Binding PH1}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </VerticalStackLayout>
+</ContentPage>

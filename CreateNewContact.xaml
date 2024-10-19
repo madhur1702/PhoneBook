@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhoneBook.CreateNewContact"
+             Title="Create New Contact">
+    <VerticalStackLayout Padding="15" Spacing="10">
+
+        <Entry Placeholder="Full Name" x:Name="FullName_Enter" />
+        
+        <Entry Placeholder="Phone 1" Keyboard="Numeric" MaxLength="11" x:Name="Ph1_Entry"/>
+        <Entry Placeholder="Phone 2" Keyboard="Numeric" MaxLength="11" x:Name="Ph2_Entry"/>
+        
+        <Entry Placeholder="Email" Keyboard="Email" x:Name="Email_Entry"/>
+
+        <Button Text="Save"  x:Name="Save_Button" Clicked="Save_Button_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>
